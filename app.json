@@ -5,19 +5,19 @@
   "keywords": ["LINE", "go", "static"],
   "buildpacks": [
     {
-      "url": "https://github.com/kr/heroku-buildpack-go.git"
+      "url": "https://github.com/kr/heroku-buildpack-go.git"{
     },
     {
       "url": "heroku/go"
     }
   ],
   "env": {
-    "LINECORP_PLATFORM_CHANNEL_CHANNELID": {
-      "description": "LINE Login - Channel ID",
+    "ChannelAccessToken": {
+      "description": "Channel Access Token",
       "required": true
     },
-    "LINECORP_PLATFORM_CHANNEL_CHANNELSECRET": {
-      "description": "LINE Login - Channel secret",
+    "ChannelSecret": {
+      "description": "Channel Secret",
       "required": true
     }
   }
